@@ -2,6 +2,7 @@ keymap C-e UP
 keymap C-y DOWN
 keymap C-d NEXT_PAGE
 keymap C-u PREV_PAGE
+keymap g-g BEGIN
 
 keymap 0 LINE_BEGIN
 
@@ -10,6 +11,9 @@ keymap C-h PREV_TAB
 keymap t TAB_GOTO
 #keymap s TAB_GOTO www.google.com
 keymap d CLOSE_TAB
+keymap > TAB_LINK
+
+keymap b EXTERN
 
 keymap c COMMAND
 
@@ -27,7 +31,7 @@ keymap r RELOAD
 keymap R RESHAPE
 keymap C-r REDRAW
 
-keymap ? HELP
+keymap I HELP
 keymap ~ REINIT
 
 keymap i DISPLAY_IMAGE
