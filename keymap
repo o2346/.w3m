@@ -19,7 +19,7 @@ keymap p HISTORY
 
 keymap a PEEK
 keymap C-a PEEK_LINK
-Keymap A PEEK_IMG
+keymap A PEEK_IMG
 
 keymap m MOVE_LIST_MENU
 
