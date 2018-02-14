@@ -1,0 +1,40 @@
+keymap C-e UP
+keymap C-y DOWN
+keymap C-d NEXT_PAGE
+keymap C-u PREV_PAGE
+
+keymap 0 LINE_BEGIN
+
+keymap C-l NEXT_TAB
+keymap C-h PREV_TAB
+keymap t TAB_GOTO
+#keymap s TAB_GOTO www.google.com
+keymap d CLOSE_TAB
+
+keymap c COMMAND
+
+keymap L NEXT
+keymap H PREV
+keymap p HISTORY
+
+keymap a PEEK
+keymap C-a PEEK_LINK
+Keymap A PEEK_IMG
+
+keymap m MOVE_LIST_MENU
+
+keymap r RELOAD
+keymap R RESHAPE
+keymap C-r REDRAW
+
+keymap ? HELP
+keymap ~ REINIT
+
+keymap i DISPLAY_IMAGE
+
+# https://github.com/tokuhirom/w3m/tree/master/doc-jp
+
+# https://sites.google.com/site/hymd3a/linux/w3m
+# http://technique.sonots.com/?UNIX%2F%E5%AD%A6%E7%94%9F%E3%83%84%E3%83%BC%E3%83%AB%2F%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%2Fw3m
+
+# http://qh73xebitbucketorg.readthedocs.io/ja/latest/2.Tools/w3m/main/
