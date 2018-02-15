@@ -8,12 +8,14 @@ keymap 0 LINE_BEGIN
 
 keymap C-l NEXT_TAB
 keymap C-h PREV_TAB
-keymap t TAB_GOTO
+keymap t-g TAB_GOTO
 #keymap s TAB_GOTO www.google.com
 keymap d CLOSE_TAB
-keymap > TAB_LINK
+keymap t-o TAB_LINK
 
-keymap b EXTERN
+keymap HOME PEEK
+
+keymap e EXTERN
 
 keymap c COMMAND
 
