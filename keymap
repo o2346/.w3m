@@ -39,6 +39,8 @@ keymap ";"-h HISTORY
 keymap a PEEK
 keymap C-a PEEK_LINK
 keymap A PEEK_IMG
+keymap ";"-b NULL
+keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
 
 keymap m MOVE_LIST_MENU
 
