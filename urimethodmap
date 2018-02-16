@@ -1,0 +1,2 @@
+s:      https://www.google.com/search?q=%s
+g:      file:/cgi-bin/google.cgi?%s
