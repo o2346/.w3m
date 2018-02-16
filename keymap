@@ -9,20 +9,21 @@ keymap 0 LINE_BEGIN
 
 keymap C-l NULL
 keymap C-h NULL
-keymap { NULL
-keymap } NULL
-keymap C-l NULL
-keymap C-h NULL
-keymap } TAB_RIGHT
-keymap { TAB_LEFT
 keymap C-l NEXT_TAB
 keymap C-h PREV_TAB
+keymap { NULL
+keymap } NULL
+keymap } TAB_RIGHT
+keymap { TAB_LEFT
 keymap ";"-t TAB_GOTO
 keymap s TAB_GOTO www.google.com
 keymap d CLOSE_TAB
-keymap ";"-l TAB_LINK
+keymap o NULL
+keymap o TAB_LINK
 keymap v MARK_WORD
 keymap ";"-s VIEW
+
+keymap ":"-! EXEC_SHELL
 
 keymap M NULL
 keymap ESC-M NULL
@@ -52,7 +53,6 @@ keymap ";"-d DOWNLOAD_LIST
 keymap C-k NULL
 keymap ";"-c COOKIE
 keymap ~ REINIT
-keymap o NULL
 
 keymap V NULL
 
