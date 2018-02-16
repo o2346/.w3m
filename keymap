@@ -1,27 +1,37 @@
 keymap C-e UP
 keymap C-y DOWN
 keymap C-d NEXT_PAGE
+keymap C-f NEXT_PAGE
 keymap C-u PREV_PAGE
 keymap g-g BEGIN
 
 keymap 0 LINE_BEGIN
 
+keymap C-l NULL
+keymap C-h NULL
+keymap { NULL
+keymap } NULL
 keymap C-l NEXT_TAB
 keymap C-h PREV_TAB
-keymap t-g TAB_GOTO
-#keymap s TAB_GOTO www.google.com
+keymap C-L TAB_RIGHT
+keymap C-H TAB_LEFT
+keymap ";"-t TAB_GOTO
+keymap s TAB_GOTO www.google.com
 keymap d CLOSE_TAB
-keymap t-o TAB_LINK
+keymap ";"-l TAB_LINK
+keymap v MARK_WORD
+keymap ";"-s VIEW
 
-keymap HOME PEEK
-
-keymap e EXTERN
+keymap M NULL
+keymap ESC-M NULL
+keymap e-e EXTERN
+keymap e-l EXTERN_LINK
 
 keymap c COMMAND
 
 keymap L NEXT
 keymap H PREV
-keymap p HISTORY
+keymap ";"-h HISTORY
 
 keymap a PEEK
 keymap C-a PEEK_LINK
@@ -33,8 +43,16 @@ keymap r RELOAD
 keymap R RESHAPE
 keymap C-r REDRAW
 
-keymap I HELP
+keymap ";"-? HELP
+keymap ";"-p OPTIONS
+keymap D NULL
+keymap ";"-d DOWNLOAD_LIST
+keymap C-k NULL
+keymap ";"-c COOKIE
 keymap ~ REINIT
+keymap o NULL
+
+keymap V NULL
 
 keymap i DISPLAY_IMAGE
 
