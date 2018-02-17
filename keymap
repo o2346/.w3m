@@ -24,7 +24,9 @@ keymap C-a PEEK_LINK
 keymap A PEEK_IMG
 keymap ";"-e EXTERN
 keymap ";"-l EXTERN_LINK
+
 #File/Stream operation
+
 #Buffer operation
 keymap C-l NULL
 keymap C-h NULL
@@ -36,6 +38,7 @@ keymap R RESHAPE
 keymap C-r REDRAW
 
 keymap i DISPLAY_IMAGE
+
 #Tab operation
 #keymap C-j NULL
 #C-j│Go to current link (GOTO_LINK) <- Why return key disabled when this is absent?
@@ -53,15 +56,19 @@ keymap ";"-o GOTO
 keymap ";"-t TAB_GOTO
 keymap d CLOSE_TAB
 keymap T TAB_MENU
+
 #Bookmark operation
+
 #Search
 keymap C-s NULL
 keymap / ISEARCH
 keymap ? ISEARCH_BACK
 
 #Dictionary look-up
+
 #Mark operation
 keymap v MARK_WORD
+
 #Miscellany
 keymap ";"-s VIEW
 keymap ":"-! EXEC_SHELL
