@@ -1,11 +1,10 @@
 #Page/Cursor motion
 keymap C-e UP
 keymap C-y DOWN
-keymap C-d NEXT_PAGE
 keymap C-f NEXT_PAGE
-keymap C-u PREV_PAGE
-
 keymap C-b NULL
+keymap C-b PREV_PAGE
+
 keymap C-n NULL
 keymap C-p NULL
 keymap j NULL
@@ -14,7 +13,6 @@ keymap g-g BEGIN
 keymap j MOVE_DOWN1
 keymap k MOVE_UP1
 keymap ";"-G GOTO_LINE
-
 keymap 0 LINE_BEGIN
 
 #Hyperlink operation
@@ -24,7 +22,6 @@ keymap t TAB_LINK
 keymap a PEEK
 keymap C-a PEEK_LINK
 keymap A PEEK_IMG
-keymap ";"-b NULL
 keymap ";"-e EXTERN
 keymap ";"-l EXTERN_LINK
 #File/Stream operation
@@ -73,7 +70,7 @@ keymap ESC-M NULL
 keymap e-e EXTERN
 keymap e-l EXTERN_LINK
 keymap c COMMAND
-keymap m MOVE_LIST_MENU
+keymap ";"-m MOVE_LIST_MENU
 keymap ";"-? HELP
 keymap ";"-p OPTIONS
 keymap D NULL
@@ -83,6 +80,7 @@ keymap ";"-c COOKIE
 keymap ~ REINIT
 
 #User defined keymaps
+keymap ";"-b NULL
 keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
 keymap V NULL
 
