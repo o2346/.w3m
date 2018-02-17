@@ -1,6 +1,8 @@
 #Page/Cursor motion
-keymap C-e UP
-keymap C-y DOWN
+keymap C-e UP 8
+keymap C-y DOWN 8
+keymap C-d UP 24
+keymap C-u DOWN 24
 keymap C-f NEXT_PAGE
 keymap C-b NULL
 keymap C-b PREV_PAGE
@@ -91,9 +93,3 @@ keymap ";"-b NULL
 keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
 keymap V NULL
 
-# https://github.com/tokuhirom/w3m/tree/master/doc-jp
-
-# https://sites.google.com/site/hymd3a/linux/w3m
-# http://technique.sonots.com/?UNIX%2F%E5%AD%A6%E7%94%9F%E3%83%84%E3%83%BC%E3%83%AB%2F%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%2Fw3m
-
-# http://qh73xebitbucketorg.readthedocs.io/ja/latest/2.Tools/w3m/main/
