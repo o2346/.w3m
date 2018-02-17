@@ -18,8 +18,26 @@ keymap ";"-G GOTO_LINE
 keymap 0 LINE_BEGIN
 
 #Hyperlink operation
+keymap o NULL
+keymap o GOTO_LINK
+keymap t TAB_LINK
+keymap a PEEK
+keymap C-a PEEK_LINK
+keymap A PEEK_IMG
+keymap ";"-b NULL
+keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
+keymap ";"-e EXTERN
+keymap ";"-l EXTERN_LINK
 #File/Stream operation
 #Buffer operation
+keymap L NEXT
+keymap H PREV
+keymap ";"-h HISTORY
+keymap r RELOAD
+keymap R RESHAPE
+keymap C-r REDRAW
+
+keymap i DISPLAY_IMAGE
 #Tab operation
 keymap C-l NULL
 keymap C-h NULL
@@ -38,9 +56,7 @@ keymap U NULL
 keymap ";"-o GOTO
 keymap ";"-t TAB_GOTO
 keymap d CLOSE_TAB
-keymap o NULL
-keymap o GOTO_LINK
-keymap t TAB_LINK
+keymap T TAB_MENU
 #Bookmark operation
 #Search
 
@@ -60,21 +76,7 @@ keymap e-l EXTERN_LINK
 
 keymap c COMMAND
 
-keymap L NEXT
-keymap H PREV
-keymap ";"-h HISTORY
-
-keymap a PEEK
-keymap C-a PEEK_LINK
-keymap A PEEK_IMG
-keymap ";"-b NULL
-keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
-
 keymap m MOVE_LIST_MENU
-
-keymap r RELOAD
-keymap R RESHAPE
-keymap C-r REDRAW
 
 keymap ";"-? HELP
 keymap ";"-p OPTIONS
@@ -86,7 +88,6 @@ keymap ~ REINIT
 
 keymap V NULL
 
-keymap i DISPLAY_IMAGE
 
 # https://github.com/tokuhirom/w3m/tree/master/doc-jp
 
