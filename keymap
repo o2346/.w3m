@@ -1,9 +1,19 @@
+#Page/Cursor motion
 keymap C-e UP
 keymap C-y DOWN
 keymap C-d NEXT_PAGE
 keymap C-f NEXT_PAGE
 keymap C-u PREV_PAGE
+
+keymap C-b NULL
+keymap C-n NULL
+keymap C-p NULL
+keymap j NULL
+keymap k NULL
 keymap g-g BEGIN
+keymap j MOVE_DOWN1
+keymap k MOVE_UP1
+keymap ";"-G GOTO_LINE
 
 keymap 0 LINE_BEGIN
 
