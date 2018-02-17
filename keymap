@@ -26,8 +26,10 @@ keymap ";"-e EXTERN
 keymap ";"-l EXTERN_LINK
 #File/Stream operation
 #Buffer operation
-keymap L NEXT
-keymap H PREV
+keymap C-l NULL
+keymap C-h NULL
+keymap C-l NEXT
+keymap C-h PREV
 keymap ";"-h HISTORY
 keymap r RELOAD
 keymap R RESHAPE
@@ -35,19 +37,17 @@ keymap C-r REDRAW
 
 keymap i DISPLAY_IMAGE
 #Tab operation
-keymap C-l NULL
-keymap C-h NULL
 #keymap C-j NULL
 #C-j│Go to current link (GOTO_LINK) <- Why return key disabled when this is absent?
 keymap C-m NULL
 keymap C-t NULL
 
-keymap C-l NEXT_TAB
-keymap C-h PREV_TAB
+keymap L NEXT_TAB
+keymap H PREV_TAB
 keymap { NULL
 keymap } NULL
-keymap } TAB_RIGHT
 keymap { TAB_LEFT
+keymap } TAB_RIGHT
 keymap U NULL
 keymap ";"-o GOTO
 keymap ";"-t TAB_GOTO
