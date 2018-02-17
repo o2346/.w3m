@@ -8,6 +8,7 @@ do
       .gitignore) continue;;
       .DS_Store) continue;;
       README.md) continue;;
+      cgi-bin) continue;;
       $0) continue;;
     esac
     [ -f ~/$f ] && continue || echo create symlink $f
