@@ -54,10 +54,10 @@ keymap } NULL
 keymap { TAB_LEFT
 keymap } TAB_RIGHT
 keymap U NULL
-keymap ";"-o GOTO
-keymap ";"-t TAB_GOTO
+keymap O GOTO
+keymap T TAB_GOTO
 keymap d CLOSE_TAB
-keymap T TAB_MENU
+#keymap T TAB_MENU
 
 #Bookmark operation
 
