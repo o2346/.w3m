@@ -19,8 +19,8 @@ keymap 0 LINE_BEGIN
 
 #Hyperlink operation
 keymap o NULL
-keymap o GOTO_LINK
-keymap t TAB_LINK
+#keymap o GOTO_LINK
+keymap "'" TAB_LINK
 keymap a PEEK
 keymap C-a PEEK_LINK
 keymap A PEEK_IMG
@@ -54,8 +54,8 @@ keymap } NULL
 keymap { TAB_LEFT
 keymap } TAB_RIGHT
 keymap U NULL
-keymap O GOTO
-keymap T TAB_GOTO
+keymap o GOTO
+keymap t TAB_GOTO
 keymap d CLOSE_TAB
 #keymap T TAB_MENU
 
