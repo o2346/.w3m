@@ -1,6 +1,6 @@
 #Page/Cursor motion
-keymap C-e UP 8
-keymap C-y DOWN 8
+keymap C-e UP 4
+keymap C-y DOWN 4
 keymap C-d UP 24
 keymap C-u DOWN 24
 keymap C-f NEXT_PAGE
