@@ -91,5 +91,11 @@ keymap ~ REINIT
 #User defined keymaps
 keymap ";"-b NULL
 keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
+
+#generate markdown link
+#$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
+keymap ";"-L NULL
+#keymap ";"-L SHELL "echo [$W3M_TITLE]\($W3M_URL\) | xsel --clipboard --input"
+keymap ";"-L SHELL "echo []\($W3M_URL\) | xsel --clipboard --input"
 keymap V NULL
 
