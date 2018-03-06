@@ -25,7 +25,7 @@ keymap a PEEK
 keymap C-a PEEK_LINK
 keymap A PEEK_IMG
 keymap ";"-e EXTERN
-keymap ";"-l EXTERN_LINK
+keymap ";"-E EXTERN_LINK
 
 #File/Stream operation
 
@@ -94,8 +94,10 @@ keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
 
 #generate markdown link
 #$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
-keymap ";"-L NULL
 #keymap ";"-L SHELL "echo [$W3M_TITLE]\($W3M_URL\) | xsel --clipboard --input"
-keymap ";"-L SHELL "echo []\($W3M_URL\) | xsel --clipboard --input"
+keymap ";"-u NULL
+keymap ";"-u SHELL "echo []\($W3M_URL\) | xsel --clipboard --input"
+keymap ";"-U NULL
+keymap ";"-U SHELL "echo []\($W3M_CURRENT_LINK\) | xsel --clipboard --input"
 keymap V NULL
 
