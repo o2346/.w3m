@@ -30,10 +30,10 @@ keymap ";"-E EXTERN_LINK
 #File/Stream operation
 
 #Buffer operation
-keymap C-l NULL
-keymap C-h NULL
-keymap C-l NEXT
-keymap C-h PREV
+keymap L NULL
+keymap H NULL
+keymap L NEXT
+keymap H PREV
 keymap ";"-h HISTORY
 keymap r RELOAD
 keymap R RESHAPE
@@ -46,13 +46,14 @@ keymap i DISPLAY_IMAGE
 #C-j│Go to current link (GOTO_LINK) <- Why return key disabled when this is absent?
 keymap C-m NULL
 keymap C-t NULL
-
-keymap L NEXT_TAB
-keymap H PREV_TAB
-keymap { NULL
-keymap } NULL
-keymap { TAB_LEFT
-keymap } TAB_RIGHT
+keymap ] NULL
+keymap [ NULL
+keymap ] NEXT_TAB
+keymap [ PREV_TAB
+keymap C-h NULL
+keymap C-l NULL
+keymap C-h TAB_LEFT
+keymap C-l TAB_RIGHT
 keymap U NULL
 keymap o GOTO
 keymap t TAB_GOTO
@@ -76,28 +77,30 @@ keymap ";"-s VIEW
 keymap ":"-! EXEC_SHELL
 keymap M NULL
 keymap ESC-M NULL
-keymap e-e EXTERN
-keymap e-l EXTERN_LINK
+keymap ";"-e EXTERN
+keymap ";"-E EXTERN_LINK
 keymap c COMMAND
 keymap ";"-m MOVE_LIST_MENU
 keymap ";"-? HELP
 keymap ";"-p OPTIONS
 keymap D NULL
 keymap ";"-d DOWNLOAD_LIST
-keymap C-k NULL
-keymap ";"-c COOKIE
+keymap C-C NULL
+keymap ";"-k COOKIE
 keymap ~ REINIT
 
 #User defined keymaps
-keymap ";"-b NULL
-keymap ";"-b EXTERN "echo %s | xsel --clipboard --input"
+keymap x NULL
+keymap y NULL
+keymap x EXTERN "[ $(uname) = \"Darwin\" ] && echo %s | pbcopy || echo %s | xsel --clipboard --input"
+keymap y SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_CURRENT_LINK | pbcopy || echo $W3M_CURRENT_LINK | xsel --clipboard --input"
 
 #generate markdown link
 #$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
 #keymap ";"-L SHELL "echo [$W3M_TITLE]\($W3M_URL\) | xsel --clipboard --input"
 keymap ";"-u NULL
-keymap ";"-u SHELL "echo []\($W3M_URL\) | xsel --clipboard --input"
+keymap ";"-u SHELL "[ $(uname) = \"Darwin\" ] && echo []\($W3M_URL\) | pbcopy || echo []\($W3M_URL\) | xsel --clipboard --input"
 keymap ";"-U NULL
-keymap ";"-U SHELL "echo []\($W3M_CURRENT_LINK\) | xsel --clipboard --input"
+keymap ";"-U SHELL "[ $(uname) = \"Darwin\" ] && echo []\($W3M_CURRENT_LINK\) | pbcopy || echo []\($W3M_CURRENT_LINK\) | xsel --clipboard --input"
 keymap V NULL
 
