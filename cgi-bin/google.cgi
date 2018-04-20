@@ -1,13 +1,14 @@
 #!/usr/bin/perl
 
 $url = "http://www.google.com/";
+$noise = "+-rakuten.co.jp";
 $_ = $ENV{"QUERY_STRING"};
 s@^g(oogle)?:@@ && s@^//@@ && s@/$@@;
 if ($_) {
 	s/\+/ /g;
 	s/%([\da-f][\da-f])/pack('C', hex($1))/egi;
 	s/[\000-\040\+:#?&%<>"\177-\377]/sprintf('%%%02X', unpack('C', $&))/eg;
-	$url .= "search?q=$_&ie=UTF-8";
+	$url .= "search?q=$_$noise&num=40&safe=off&hl=en&lr=lang_en&lr=lang_ja";
 } else {
 	$input = "w3m-control: GOTO_LINK";
 }
