@@ -1,3 +1,4 @@
 s:      https://www.google.com/search?q=%s
 g:      file:/cgi-bin/google.cgi?%s
 e:      file:/cgi-bin/echo.sh?%s
+w:      https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s
