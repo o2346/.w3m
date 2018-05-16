@@ -92,8 +92,8 @@ keymap ~ REINIT
 #User defined keymaps
 keymap x NULL
 keymap y NULL
-keymap x EXTERN "[ $(uname) = \"Darwin\" ] && echo %s | pbcopy || echo %s | xsel --clipboard --input"
-keymap y SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_CURRENT_LINK | pbcopy || echo $W3M_CURRENT_LINK | xsel --clipboard --input"
+keymap yy SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_URL | pbcopy || echo $W3M_URL | xsel --clipboard --input"
+keymap yw SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_CURRENT_LINK | pbcopy || echo $W3M_CURRENT_LINK | xsel --clipboard --input"
 
 #generate markdown link
 #$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
