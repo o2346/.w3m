@@ -42,6 +42,7 @@ keymap R RESHAPE
 keymap C-r REDRAW
 
 keymap i DISPLAY_IMAGE
+keymap gf VIEW
 
 #Tab operation
 #keymap C-j NULL
