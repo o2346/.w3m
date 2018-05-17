@@ -1,3 +1,5 @@
+#unmap
+keymap ^[[1~ NULL
 #Page/Cursor motion
 keymap C-e UP 4
 keymap C-y DOWN 4
@@ -81,19 +83,20 @@ keymap ";"-e EXTERN
 keymap ";"-E EXTERN_LINK
 keymap c COMMAND
 keymap ";"-m MOVE_LIST_MENU
-keymap ";"-? HELP
+keymap ? HELP
 keymap ";"-p OPTIONS
 keymap D NULL
 keymap ";"-d DOWNLOAD_LIST
 keymap C-C NULL
 keymap ";"-k COOKIE
-keymap ~ REINIT
+keymap ^[[1~~ REINIT
 
 #User defined keymaps
 keymap x NULL
 keymap y NULL
 keymap yy SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_URL | pbcopy || echo $W3M_URL | xsel --clipboard --input"
 keymap yw SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_CURRENT_LINK | pbcopy || echo $W3M_CURRENT_LINK | xsel --clipboard --input"
+keymap ^[[1~? OPTIONS
 
 #generate markdown link
 #$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
