@@ -4,7 +4,11 @@ $url = "https://www.google.co.jp/search?safe=off&num=24&hl=en&q=";
 $noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp";
 $dict = "英和+";
 $_ = $ENV{"QUERY_STRING"};
-s@^g(oogle)?:@@ && s@^//@@ && s@/$@@;
+
+if($_ =~ /[^a-zA-Z:]+/) {
+  $dict = "和英+";
+}
+
 if ($_) {
 	s/\+/ /g;
 	s/d://g;
