@@ -1,13 +1,12 @@
 #!/usr/bin/perl
 
 $url = "https://www.google.co.jp/search?safe=off&num=24&hl=en&q=";
-$noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp";
-$dict = "英和+";
 $_ = $ENV{"QUERY_STRING"};
-
+$dict = "英和+";
 if($_ =~ /[^a-zA-Z:]+/) {
   $dict = "和英+";
 }
+$noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp";
 
 if ($_) {
 	s/\+/ /g;
