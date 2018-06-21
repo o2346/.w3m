@@ -60,7 +60,9 @@ keymap C-l TAB_RIGHT
 keymap U NULL
 keymap o GOTO
 keymap t TAB_GOTO
-keymap d CLOSE_TAB
+keymap d GOTO "file:/cgi-bin/deletebuf.cgi"
+keymap u TAB_GOTO "file:/cgi-bin/resumebuf.cgi"
+#keymap u TAB_GOTO "$PREV_BUF"
 #keymap T TAB_MENU
 
 #Bookmark operation
