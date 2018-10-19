@@ -98,15 +98,15 @@ keymap ^[[1~~ REINIT
 keymap x NULL
 keymap y NULL
 keymap yy SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_URL | pbcopy || echo $W3M_URL | xsel --clipboard --input"
-keymap yw SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_CURRENT_LINK | pbcopy || echo $W3M_CURRENT_LINK | xsel --clipboard --input"
+#keymap yw SHELL "[ $(uname) = \"Darwin\" ] && echo $W3M_CURRENT_LINK | pbcopy || echo $W3M_CURRENT_LINK | xsel --clipboard --input"
 keymap ^[[1~? OPTIONS
 
 #generate markdown link
 #$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
 #keymap ";"-L SHELL "echo [$W3M_TITLE]\($W3M_URL\) | xsel --clipboard --input"
-keymap ";"-u NULL
-keymap ";"-u SHELL "[ $(uname) = \"Darwin\" ] && echo []\($W3M_URL\) | pbcopy || echo []\($W3M_URL\) | xsel --clipboard --input"
-keymap ";"-U NULL
-keymap ";"-U SHELL "[ $(uname) = \"Darwin\" ] && echo []\($W3M_CURRENT_LINK\) | pbcopy || echo []\($W3M_CURRENT_LINK\) | xsel --clipboard --input"
+keymap YY NULL
+keymap YY SHELL "[ $(uname) = \"Darwin\" ] && echo [`curl -s \"$W3M_URL\" | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) | pbcopy || echo [`curl -s \"$W3M_URL\" | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) | xsel --clipboard --input"
+#keymap ";"-U NULL
+#keymap ";"-U SHELL "[ $(uname) = \"Darwin\" ] && echo []\($W3M_CURRENT_LINK\) | pbcopy || echo []\($W3M_CURRENT_LINK\) | xsel --clipboard --input"
 keymap V NULL
 
