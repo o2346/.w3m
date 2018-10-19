@@ -105,8 +105,8 @@ keymap ^[[1~? OPTIONS
 #$W3M_TITLE mojibake happens when it comes with japanese. try cgi?
 #keymap ";"-L SHELL "echo [$W3M_TITLE]\($W3M_URL\) | xsel --clipboard --input"
 keymap YY NULL
-keymap YY SHELL "[ $(uname) = \"Darwin\" ] && echo [`curl -s \"$W3M_URL\" | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) | pbcopy || echo [`curl -s \"$W3M_URL\" | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) | xsel --clipboard --input"
-keymap YD SHELL "[ $(uname) = \"Darwin\" ] && echo [`curl -s \"$W3M_URL\" | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) || echo [`curl -s \"$W3M_URL\" | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\)"
+keymap YY SHELL "[ $(uname) = \"Darwin\" ] && echo [`curl -s \"$W3M_URL\" | nkf | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) | pbcopy || echo [`curl -s \"$W3M_URL\" | nkf | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) | xsel --clipboard --input"
+keymap YD SHELL "[ $(uname) = \"Darwin\" ] && echo [`curl -s \"$W3M_URL\" | nkf | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\) || echo [`curl -s \"$W3M_URL\" | nkf | grep '<title>' | sed 's|</\?title>||g' | tr -d '\n'`]\($W3M_URL\)"
 #keymap ";"-U NULL
 #keymap ";"-U SHELL "[ $(uname) = \"Darwin\" ] && echo []\($W3M_CURRENT_LINK\) | pbcopy || echo []\($W3M_CURRENT_LINK\) | xsel --clipboard --input"
 keymap V NULL
