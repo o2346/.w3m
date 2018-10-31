@@ -13,7 +13,7 @@ if ($_) {
 	s/d://g;
 	s/%([\da-f][\da-f])/pack('C', hex($1))/egi;
 	s/[\000-\040\+:#?&%<>"\177-\377]/sprintf('%%%02X', unpack('C', $&))/eg;
-	$url .= "$dict$_$noise";
+	$url .= "$dict$_";
 } else {
 	$input = "w3m-control: GOTO_LINK";
 }
