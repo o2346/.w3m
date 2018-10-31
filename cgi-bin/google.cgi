@@ -3,7 +3,7 @@
 $url = "https://www.google.co.jp/search?safe=off&num=24&hl=en&q=";
 $noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp";
 $_ = $ENV{"QUERY_STRING"};
-s@^g(oogle)?:@@ && s@^//@@ && s@/$@@;
+s@^s:@@ && s@^//@@ && s@/$@@;
 if ($_) {
 	s/\+/ /g;
 	s/%([\da-f][\da-f])/pack('C', hex($1))/egi;
