@@ -6,14 +6,14 @@ $dict = "英和+";
 if($_ =~ /[^a-zA-Z:]+/) {
   $dict = "和英+";
 }
-$noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp";
+$noise = "+-weblio.jp";
 
 if ($_) {
 	s/\+/ /g;
 	s/d://g;
 	s/%([\da-f][\da-f])/pack('C', hex($1))/egi;
 	s/[\000-\040\+:#?&%<>"\177-\377]/sprintf('%%%02X', unpack('C', $&))/eg;
-	$url .= "$dict$_";
+	$url .= "$dict$_$noise";
 } else {
 	$input = "w3m-control: GOTO_LINK";
 }
