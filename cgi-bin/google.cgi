@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 $url = "https://www.google.co.jp/search?safe=off&num=24&hl=en&q=";
-$noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp";
+$noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp+-wa3.i-3-i.info";
 $_ = $ENV{"QUERY_STRING"};
 s@^s:@@ && s@^//@@ && s@/$@@;
 if ($_) {
