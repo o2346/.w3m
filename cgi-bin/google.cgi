@@ -3,7 +3,7 @@
 $url = "https://www.google.co.jp/search?safe=off&num=16&hl=en&q=";
 # $url = "https://www.bing.com/search?sc=8-0&num=16&setmkt=en-us&setlang=en-us&q=";
 # https://support.google.com/gsa/answer/6329265#4134d4ec-c7f1-4eff-ae65-b171e689ca5a
-$noise = "+-matome.naver.jp+-cookpad.com+-nikkeibp.co.jp+-rakuten.co.jp+-weblio.jp+-slideshare.net+-japan.zdnet.com+-news.mynavi.jp+-wa3.i-3-i.info";
+$noise = "+-naver+-cookpad+-rakuten+-weblio+-slideshare+-i-3-i.info";
 $_ = $ENV{"QUERY_STRING"};
 s@^s:@@ && s@^//@@ && s@/$@@;
 if ($_) {
