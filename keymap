@@ -22,7 +22,8 @@ keymap 0 LINE_BEGIN
 #Hyperlink operation
 keymap o NULL
 #keymap o GOTO_LINK
-keymap "'" TAB_LINK
+#keymap "'" TAB_LINK
+keymap "'" TAB_GOTO "file:/cgi-bin/customjump.cgi"
 keymap a PEEK
 keymap C-a PEEK_LINK
 keymap A PEEK_IMG
