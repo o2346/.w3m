@@ -1,8 +1,9 @@
 #!/usr/bin/perl
 
 #$url = "https://www.google.com/search?safe=off&q=";
-$url = "https://www.bing.com/search?sc=8-0&num=16&setmkt=en-us&setlang=en-us&q=";
-$noise = "&as_eq=naver%20cookpad%20rakuten%20weblio%20slideshare";
+$url = "https://html.duckduckgo.com/html/?q=";
+#$noise = "&as_eq=naver%20cookpad%20rakuten%20weblio%20slideshare";
+$noise = "";
 $_ = $ENV{"QUERY_STRING"};
 s@^s:@@ && s@^//@@ && s@/$@@;
 if ($_) {
