@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
-#$url = "https://www.google.com/search?safe=off&q=";
-$url = "https://html.duckduckgo.com/html/?q=";
+$url = "https://www.google.com/search?safe=off&q=";
+#$url = "https://html.duckduckgo.com/html/?q=";
 #$noise = "&as_eq=naver%20cookpad%20rakuten%20weblio%20slideshare";
 $noise = "";
 $_ = $ENV{"QUERY_STRING"};
