@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
-$url = "https://www.google.com/search?safe=off&num=24&hl=en&q=";
+#$url = "https://www.google.com/search?safe=off&num=24&hl=en&q=";
+$url = "https://html.duckduckgo.com/html/?q=";
 $_ = $ENV{"QUERY_STRING"};
 $dict = "英和+";
 if($_ =~ /[^a-zA-Z:]+/) {
